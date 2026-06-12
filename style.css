@@ -1,0 +1,129 @@
+:root{
+    --cor-primaria: #F8F9FA;
+    --cor-secundaria: #1A1B1F;
+    --cor-suporte: #E9ECEF;
+    --cor-titulo: #1A1B1F;
+    --cor-suporte-verde: #1b4d3e;
+    --cor-secundaria-hover: #2d6a4f;
+}
+
+.dark-mode{
+    --cor-primaria: #121214;
+    --cor-secundaria: #202227;
+    --cor-suporte: #E9ECEF;
+    --cor-titulo: #E9ECEF;
+    --cor-suporte-verde: #1b4d3e;
+    --cor-secundaria-hover: #2d6a4f;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif
+}
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2% 4%;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+#titulo-header {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+#menu-navegacao {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+#menu-navegacao a {
+    text-decoration: none;
+    color: var(--cor-suporte);
+    padding: 15px 60px;
+    transition: all 0.3s ease;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+
+}
+
+#menu-navegacao a:hover {
+    color: var(--cor-secundaria-hover);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+#menu-navegacao a:active {
+    box-shadow: none;
+}
+
+#botao-tema{
+    position:fixed;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    background:transparent;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    color: var(--cor-suporte);
+}
+
+
+#botao-tema:hover {
+    transform: scale(1.15);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    color: var(--cor-suporte-verde);
+}
+
+#botao-tema:active {
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+.controles-acessibilidade {
+    display: flex;
+    gap: 5px;
+}
+
+.controles-acessibilidade button {
+    background-color: var(--cor-suporte-verde);
+    color: var(--cor-suporte);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.1s ease;
+}
+
+.controles-acessibilidade button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    background-color: var(--cor-secundaria-hover);
+    transition: all 0.3s ease;
+}
+
+.controles-acessibilidade button:active {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
