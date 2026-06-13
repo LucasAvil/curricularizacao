@@ -22,8 +22,6 @@ botao.addEventListener('click', () => {
 const btnAumentar = document.getElementById('btn-aumentar');
 const btnDiminuir = document.getElementById('btn-diminuir');
 
-let tamanhoAtual = 100;
-
 btnAumentar.addEventListener('click', () => {
   const tamanhoAtual = parseFloat(
     getComputedStyle(document.documentElement).fontSize,
@@ -41,3 +39,23 @@ btnDiminuir.addEventListener('click', () => {
     document.documentElement.style.fontSize = tamanhoAtual - 2 + 'px';
   }
 });
+
+const btnGerar = document.querySelector('#btn-gerar')
+const inputSenha = document.querySelector('#senha-resultado')
+
+if (btnGerar) {
+  btnGerar.addEventListener('click', () => {
+    const tamanho = 12;
+    const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    const numeros = '0123456789'
+    const especiais = '!@#$%&*()_+}{[]:;?><,./-='
+    const todosCaracteres = letrasMaiusculas + letrasMaiusculas.toLowerCase() + numeros + especiais
+    let senhaGerada = ""
+    for (let i = 0; i < tamanho; i++) {
+      const indice = Math.floor(Math.random() * todosCaracteres.length);
+      senhaGerada += todosCaracteres.charAt(indice)
+      
+    }
+    inputSenha.value = senhaGerada
+  })
+}

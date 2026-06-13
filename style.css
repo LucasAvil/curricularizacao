@@ -127,3 +127,56 @@ header {
     transform: scale(0.9);
     transition: all 0.3s ease;
 }
+
+h2, p {
+    color: var(--cor-titulo);
+    text-align: center;
+    padding: 10px;
+}
+
+.card-gerador {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--cor-suporte-verde);
+    border-radius: 12px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo-senha input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid var(--cor-suporte-verde);
+    border-radius: 6px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    outline: none;
+}
+
+#btn-gerar {
+    background-color: var(--cor-suporte-verde);
+    color: var(--cor-suporte);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-gerar:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--cor-secundaria-hover);
+}
+
+#btn-gerar:active {
+    transform: scale(1);
+    box-shadow: none;
+}
