@@ -59,3 +59,9 @@ if (btnGerar) {
     inputSenha.value = senhaGerada
   })
 }
+
+const btnEnviar = document.querySelector('#botao-enviar')
+ btnEnviar.addEventListener('click', () => {
+  alert('Página em construção')
+  
+ })

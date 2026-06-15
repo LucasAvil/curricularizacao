@@ -180,3 +180,64 @@ h2, p {
     transform: scale(1);
     box-shadow: none;
 }
+
+.form-estilizado {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.grupo-input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--cor-titulo);
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  padding: 12px;
+  border: 1px solid var(--cor-suporte-verde);
+  border-radius: 8px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-titulo);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.grupo-input input:focus,
+.grupo-input textarea:focus {
+  border-color: var(--cor-secundaria-hover);
+}
+
+#botao-enviar {
+  padding: 12px;
+  background-color: var(--cor-suporte-verde);
+  color: var(--cor-suporte);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+#botao-enviar:hover {
+  background-color: var(--cor-secundaria-hover);
+  transform: scale(1.03);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#botao-enviar:active {
+  transform: scale(1);
+  box-shadow: none;
+}
