@@ -1,51 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Cybersec-Senhas</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="header">
+      <div id="menu-navegacao">
+        <nav>
+          <a href="index.html" id="titulo-header">Cybersecurity</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">Sobre</a>
+          <a href="contact.html">Contato</a>
+          <a href="content.html">Conteúdos</a>
+          <a href="security.html">Segurança</a>
+        </nav>
+      </div>
 
-        <div id="menu-navegacao">
-            <nav>
-                <a href="index.html" id="titulo-header">Cybersecurity</a>
-                <a href="index.html">Home</a>
-                <a href="about.html">Sobre</a>
-                <a href="contact.html">Contato</a>
-                <a href="content.html">Conteúdos</a>
-                <a href="security.html">Segurança</a>
-            </nav>
-        </div>
+      <div class="controles-acessibilidade">
+        <button id="btn-aumentar">A+</button>
+        <button id="btn-diminuir">A-</button>
+      </div>
 
-        <div class="controles-acessibilidade">
-            <button id="btn-aumentar">A+</button>
-            <button id="btn-diminuir">A-</button>
-        </div>
-
-        <button id="botao-tema">☼</button>
-
+      <button id="botao-tema">☼</button>
     </header>
-    <section class="caixas-container-seguranca">   
-        <h1>Senhas Fortes</h1> 
-        <p> As senhas são a primeira proteção das nossas contas e informações pessoais contra ataques. </p>
+    <section class="caixas-container-seguranca">
+      <h1>Senhas Fortes</h1>
+      <p>
+        As senhas são a primeira proteção das nossas contas e informações
+        pessoais contra ataques.
+      </p>
+    </section>
+    <div class="card-gerador">
+      <h1>Poder da Senha Forte</h1>
+      <p>
+        Imagine que sua senha é a chave para um cofre. Uma senha forte é como
+        uma chave super segura que mantém seus segredos seguros.
+      </p>
+    </div>
+
+    <div class="card-gerador">
+      <h1>Importância da Senha Forte</h1>
+      <p>
+        Protege suas informações pessoais como Fotos, Mensagens, Dados
+        Financeiros, Perfis em Redes Sociais e Contas Bancárias.
+      </p>
+    </div>
+
+    <div class="card-gerador">
+      <h1>Como Ter uma Senha Forte?</h1>
+      <ul>
+        <li><strong>Comprida</strong></li>
+        <li>
+          <strong>Variada:</strong> Combinando Letras Maiúsculas, Minúsculas,
+          Números e Símbolos
+        </li>
+        <li>
+          <strong>Imprevisível:</strong> Não usar Nome ou Data de Nascimento
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-gerador">
+      <h1>Truques de Mestre</h1>
+      <p>
+        Não use sempre a mesma senha. O ideal seria cada conta ter a sua própria
+        senha única. Pode também usar um Gerenciador de Senhas, como Last Pass,
+        para armazenar e não esquecer das senhas difíceis.
+      </p>
+    </div>
+
+    <div class="card-gerador">
+      <h1>Super Defesa</h1>
+      <p>
+        Sempre que possível, habilite o 2FA (Autenticação de Dois Fatores) pois
+        além de sua Senha Forte, você usa um código enviado ao seu Telefone.
+        Pode ser habilitado através das Configurações de Segurança.
+      </p>
+    </div>
+
+    <div class="card-gerador">
+      <h1>Exemplos de Senhas Fortes</h1>
+      <ul>
+        <li>4o£rD656UAc$</li>
+        <li>57WeRkzaTaHivfO1#</li>
+        <li>S3cur!ty#N1nj@</li>
+        <li>L@pt0p#H3r02024</li>
+        <li>P!zz@L0v3r$12</li>
+      </ul>
+    </div>
+
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
